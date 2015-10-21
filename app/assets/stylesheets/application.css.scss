@@ -1,2 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "normalize";
+
+.gravatar-fix {
+	width: 20px;
+}
