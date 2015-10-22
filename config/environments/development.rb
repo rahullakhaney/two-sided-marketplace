@@ -45,8 +45,8 @@ Rails.application.configure do
     address: 'smtp.mandrillapp.com',
     port: 587,
     enable_starttls_auto: true,
-    user_name: 'rahul.lakhaney@gmail.com',
-    password: '6Dr4tIJIZLvrWZyfZBOVyg',
+    user_name: ENV['MANDRILL_USER_NAME'],
+    password: ENV['MANDRILL_API_KEY'],
     authentication: 'login'
   }
 end
