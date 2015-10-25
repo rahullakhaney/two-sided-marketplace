@@ -3,6 +3,7 @@ class Book < ActiveRecord::Base
 	friendly_id :name, use: :slugged
 
 	belongs_to :user
+	has_many :sales
 	has_attached_file :image
 	has_attached_file :resource
 	validates :image, attachment_presence: true
@@ -15,4 +16,7 @@ class Book < ActiveRecord::Base
 	validates_attachment_content_type :resource,
 	content_type: ['application/pdf'],
 	message: "Only pdfs allowed"
+
+	validates_numericality_of :price
+	greater_than: 49, message: "Must be atleast 50 cents"
 end
