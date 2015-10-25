@@ -16,6 +16,8 @@ gem 'omniauth-facebook'
 gem 'omniauth-twitter'
 gem 'cancan'
 gem 'paperclip'
+gem 'aws-sdk', '< 2.0'
+gem 'simple_form', '~> 3.2'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views

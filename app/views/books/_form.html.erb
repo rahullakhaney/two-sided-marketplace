@@ -25,14 +25,22 @@
     <div class="form-group">
       <%= f.number_field :price, required: true, class: 'form-control', placeholder: "Book Price" %>
     </div>
-    <div class="checkbox">
-      <p>Availability</p>
-      <%= f.check_box :availability, required: false %>
-      </div><br/>
-    <div class="actions form-group">
-      <%= f.submit 'Create Book', class: "btn btn-primary" %>
-    </div>
-    <% end %>
-
+    <div class="form-group">
+    <p>Book Image</p>
+     <%= f.file_field :image %>
+   </div>
+   <div class="form-group">
+   <p>Book PDF</p>
+    <%= f.file_field :resource %> 
   </div>
+  <div class="checkbox">
+    <p>Availability</p>
+    <%= f.check_box :availability, required: false %>
+  </div><br/>
+  <div class="actions form-group">
+    <%= f.submit 'Create Book', class: "btn btn-primary" %>
+  </div>
+  <% end %>
+
+</div>
 </div>
