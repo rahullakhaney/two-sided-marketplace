@@ -17,6 +17,7 @@ class Book < ActiveRecord::Base
 	content_type: ['application/pdf'],
 	message: "Only pdfs allowed"
 
-	validates_numericality_of :price
-	greater_than: 49, message: "Must be atleast 50 cents"
+	validates_numericality_of :price,
+	greater_than: 49, message: "must be at least 50 cents"
+	
 end
