@@ -1,5 +1,7 @@
-<div class="row text-center">
-	<h1>Congratulations on your order <%= @sale.guid %></h1>
+<div id="transactions" class="row text-center">
+	<h1>Congratulations on your order</h1>
+	<hr>
+	<h2>Transaction ID : <%= @sale.guid %></h2>
 	<p>Here is your download link</p>
-	<%= link_to "Download", @book.resource.url %>
+	<%= link_to "Download", @book.resource.url %><br/><br/><br/>
 </div>
