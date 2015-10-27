@@ -1,3 +1,6 @@
+![Screenshot1](/screen1.png)
+![Screenshot2](/screen2.png)
+
 # Planning Our Application
 1. What are we building?
 2. Who are we building it for?
